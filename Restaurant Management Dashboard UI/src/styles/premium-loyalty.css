@@ -1,0 +1,104 @@
+@layer components {
+  .membership-gradient {
+    background: linear-gradient(135deg, #3e2723 0%, #4e342e 45%, #6d4c41 100%);
+  }
+
+  .loyalty-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem; /* matches rounded-xl */
+    border: 2px solid rgb(200 164 122 / 0.2);
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.15),
+      0 4px 6px -4px rgb(0 0 0 / 0.15);
+    color: #ffffff;
+  }
+
+  .loyalty-card-decor-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9999px;
+    background: rgb(200 164 122 / 0.1);
+    filter: blur(32px);
+    pointer-events: none;
+  }
+
+  .loyalty-card-decor-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9999px;
+    background: rgb(139 90 43 / 0.1);
+    filter: blur(32px);
+    pointer-events: none;
+  }
+
+  .loyalty-panel {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(200 164 122 / 0.2);
+    background: rgb(45 27 16 / 0.5);
+    backdrop-filter: blur(8px);
+  }
+
+  .loyalty-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgb(200 164 122 / 0.35);
+    background: rgb(200 164 122 / 0.18);
+    color: #c8a47a;
+  }
+
+  .loyalty-badge-solid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgb(200 164 122 / 0.5);
+    background: #c8a47a;
+    color: #2d1b10;
+  }
+
+  .loyalty-checkbox {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(200 164 122 / 0.45);
+    background: rgb(45 27 16 / 0.35);
+    accent-color: #c8a47a;
+  }
+
+  .loyalty-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(200 164 122 / 0.18);
+    background: rgb(45 27 16 / 0.45);
+  }
+
+  .loyalty-row-applied {
+    border-color: rgb(200 164 122 / 0.45);
+    background: linear-gradient(135deg, rgb(45 27 16 / 0.75), rgb(62 39 35 / 0.75));
+  }
+}
